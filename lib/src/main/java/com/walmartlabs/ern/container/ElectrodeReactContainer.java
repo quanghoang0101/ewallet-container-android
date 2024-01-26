@@ -19,6 +19,8 @@ package com.walmartlabs.ern.container;
 import com.walmartlabs.electrode.reactnative.bridge.helpers.Logger;
 import com.walmartlabs.ern.container.devassist.ErnDevSettingsActivity;
 import com.walmartlabs.ern.container.plugins.ElectrodeBridgePlugin;
+import com.walmartlabs.ern.container.plugins.SafeAreaContextPackagePlugin;
+import com.walmartlabs.ern.container.plugins.RNScreensPackagePlugin;
 
 import android.app.Activity;
 import android.app.Application;
@@ -149,6 +151,8 @@ public class ElectrodeReactContainer {
 
             sReactPackages.add(new MainReactPackage());
             sReactPackages.add(new ElectrodeBridgePlugin().hook(application, null));
+            sReactPackages.add(new SafeAreaContextPackagePlugin().hook(application, null));
+            sReactPackages.add(new RNScreensPackagePlugin().hook(application, null));
             sReactPackages.removeAll(Collections.singleton((ReactPackage) null));
 
             // Add Electrode Native Settings item to React Native dev menu
