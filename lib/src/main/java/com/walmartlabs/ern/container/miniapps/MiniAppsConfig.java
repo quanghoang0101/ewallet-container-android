@@ -32,6 +32,7 @@ public class MiniAppsConfig {
                 {
                     put(MiniApps.AuthMiniapp.getName(), MiniApps.AuthMiniapp.getActivityClass());
                     put(MiniApps.MainMiniapp.getName(), MiniApps.MainMiniapp.getActivityClass());
+                    put(MiniApps.NotificationMiniapp.getName(), MiniApps.NotificationMiniapp.getActivityClass());
                     put(MiniApps.ProfileMiniapp.getName(), MiniApps.ProfileMiniapp.getActivityClass());
                     put(MiniApps.VoucherMiniapp.getName(), MiniApps.VoucherMiniapp.getActivityClass());
                 }
@@ -40,6 +41,7 @@ public class MiniAppsConfig {
     public enum MiniApps {
         AuthMiniapp("AuthMiniapp", AuthMiniappActivity.class),
         MainMiniapp("MainMiniapp", MainMiniappActivity.class),
+        NotificationMiniapp("NotificationMiniapp", NotificationMiniappActivity.class),
         ProfileMiniapp("ProfileMiniapp", ProfileMiniappActivity.class),
         VoucherMiniapp("VoucherMiniapp", VoucherMiniappActivity.class),
         ;

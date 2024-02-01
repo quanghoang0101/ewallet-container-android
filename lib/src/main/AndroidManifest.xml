@@ -8,6 +8,8 @@
                  android:exported="true" />
        <activity android:name="com.walmartlabs.ern.container.miniapps.MainMiniappActivity"
                  android:exported="true" />
+       <activity android:name="com.walmartlabs.ern.container.miniapps.NotificationMiniappActivity"
+                 android:exported="true" />
        <activity android:name="com.walmartlabs.ern.container.miniapps.ProfileMiniappActivity"
                  android:exported="true" />
        <activity android:name="com.walmartlabs.ern.container.miniapps.VoucherMiniappActivity"
